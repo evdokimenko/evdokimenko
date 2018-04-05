@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font: 12px Arial, sans-serif;
+    background: #f1f1f1;
+    color: #c2c2c2;
+    margin: 0;
+}
+
+a,
+input[type="search"],
+button[type="submit"]{
+    text-decoration: none;
+}
+
+.hugo-search {
+    padding-top: 40px;
+}
+
+.search {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.input-placeholder {
+    width: 100%;
+    padding: 0 80px 0 10px;
+    font-weight: 700;
+    border: none;
+    background: transparent;
+    font-size: 100px;
+    color: #ec5a62;
+}
+.input-placeholder,
+.search :focus {
+    outline: none;
+}
+
+.submit {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    text-indent: 100px;
+    overflow: hidden;
+    right: 154px;
+    top: 13%;
+    background: transparent url("img/magnifier.svg") no-repeat center center;
+    background-size: 100%;
+    border: none;
+    transform-origin: 100% 50%;
+    transform: translate3d(0, -50%, 0) scale(1);
+    transition: transform 0.3s;
+}
+
+/*основная часть   */
+div {
+    width: 80%;
+    margin: 40px auto 0;
+    box-sizing: border-box;
+}
+
+aside {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30%;
+}
+
+ul {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+}
+
+li {
+    box-sizing: border-box;
+    list-style-type: none;
+    width: 100%;
+    padding-top: 6px;
+}
+
+a {
+    display: inline-block;
+    background: rgba(118, 117, 128, 0.05);
+    width: 100%;
+    color: #c2c2c2;
+    border-radius: 6px;
+
+}
+
+a * {
+    vertical-align: middle;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    display: inline-block;
+}
+
+.circle img {
+    border-radius: 40px;
+}
+
+img {
+    max-width: 100%;
+    padding: 10px;
+    height: auto;
+}
+
+li a:hover {
+    background: rgba(118, 117, 128, 0.1);
+    color: #ec5a62;
+}
+
+li h3:hover {
+    color: #ec5a62;
+}
+
+.margin-center {
+    margin: 0 4%;
+}
