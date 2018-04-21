@@ -1,0 +1,90 @@
+* {
+    font-family: Arial sans-serif;
+}
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+p {
+    font-size: 13px;
+}
+input {
+    margin-bottom: 15px;
+    background: #f0f0f0;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    text-indent: 0;   transition: text-indent 0.3s ease;
+    box-sizing: border-box;
+}
+input:nth-child(-n+2) {
+    width: 193px;
+    height: 40px;
+}
+input:nth-child(n+3) {
+    width: 400px;
+    height: 40px;
+}
+input:focus {
+    text-indent: 500px; transition: text-indent 0.3s ease;
+}
+input[placeholder] {
+    padding-left: 15px;
+}
+input[type="submit"] {
+    color: #ffffff;
+    background: #ea355a;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header {
+    position: relative;
+    padding-left: 35px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.header:before{
+    content: url("images/icon.svg");
+    display: inline-block;
+    position: absolute;
+    left: 1px;
+}
+.content-wraper {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: linear-gradient(45deg, rgba(255,81,47,1) 0%,
+    rgba(221,36,118,1) 100%);
+}
+.sign-form {
+    width: 460px;
+    height: 470px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    border-radius: 5px;
+    background: #ffffff;
+    display: inline-block;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.mark-red {
+    color: #e12a6c;
+}
+#last-name {
+    margin-left: 10px;
+}
