@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+@font-face {
+  font-family: 'aleoregular';
+  src: url(font/Aleo-Regular-webfont.eot);
+  src: url(font/Aleo-Regular-webfont.eot?#iefix) format("embedded-opentype"), url(font/Aleo-Regular-webfont.woff) format("woff"), url(font/Aleo-Regular-webfont.ttf) format("truetype"), url(font/Aleo-Regular-webfont.svg#aleoregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  text-decoration: none;
+  list-style-type: none;
+  color: #ffffff; }
+
+body {
+  margin: 0; }
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  min-width: 720px; }
+
+.mountains {
+  height: 100vh;
+  width: 100%;
+  background: url("img/mountains.jpg") center center no-repeat;
+  background-size: cover; }
+  .mountains .wrapper.one {
+    height: 100vh;
+    text-align: center; }
+  .mountains h1 {
+    display: inline-block;
+    margin: 0;
+    font: 48px/26px "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    padding-top: 245px; }
+  .mountains p {
+    font: 22px/26px "Josefin Sans", sans-serif;
+    letter-spacing: 6px;
+    margin: 18px 0; }
+  .mountains form {
+    width: 650px;
+    height: 60px;
+    background: #ffffff;
+    margin: 0 auto; }
+    .mountains form input[type='search']:focus {
+      color: #333333;
+      box-shadow: inset 0 0 16px -3px #2233ba;
+      font-size: 15px; }
+  .mountains input[type="search"] {
+    border: none;
+    width: 493px;
+    height: 56px;
+    margin: 2px;
+    text-align: center;
+    outline: none;
+    font: 14px/26px "Josefin Sans", sans-serif; }
+  .mountains input[type="submit"] {
+    background: blue url("img/svg/search.svg") 90% 50% no-repeat;
+    border: none;
+    height: 56px;
+    width: 145px;
+    margin: 2px;
+    text-transform: uppercase;
+    font: 14px/26px 'aleoregular' serif;
+    outline: none; }
+    .mountains input[type="submit"]:hover {
+      cursor: pointer;
+      border: 1px solid;
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+      outline-color: rgba(255, 255, 255, 0);
+      outline-offset: 15px;
+      text-shadow: 1px 1px 2px #427388; }
+  .mountains .scroll-button {
+    position: relative;
+    top: 15%; }
+    .mountains .scroll-button a {
+      font: 14px/26px "Josefin Sans", sans-serif; }
+      .mountains .scroll-button a span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 13px;
+        height: 8px;
+        background: url("img/svg/scroll.svg");
+        margin: 0 auto; }
+  .mountains header {
+    background: #5474fd;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    top: 90%; }
+    .mountains header .wrapper {
+      position: relative;
+      top: 40%;
+      bottom: 50%; }
+    .mountains header .logo {
+      display: inline-block;
+      font: 700 24px/26px "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      float: left; }
+    .mountains header ul.nav {
+      margin: 0;
+      float: right; }
+    .mountains header li {
+      display: inline-block;
+      margin-left: 60px; }
+      .mountains header li a {
+        transition: 0.3s ease;
+        font: 14px/26px 'aleoregular', sans-serif;
+        text-transform: uppercase; }
+        .mountains header li a:hover {
+          border-top: 4px solid #ffffff;
+          border-bottom: 4px solid #ffffff;
+          padding: 6px 0; }
+
+.castle {
+  background: url("img/castle-bg.jpg") center center no-repeat;
+  background-size: cover; }
+  .castle h2 {
+    font: 36px/26px 'aleoregular', serif; }
+  .castle p {
+    font: 16px/26px "Josefin Sans", sans-serif; }
+  .castle .wrapper.flex {
+    display: flex;
+    justify-content: space-between;
+    height: 690px;
+    align-items: center;
+    width: 100%; }
+    .castle .wrapper.flex input {
+      background: blue;
+      border: none;
+      height: 60px;
+      width: 225px;
+      margin: 2px;
+      text-transform: uppercase;
+      font: 16px/26px 'aleoregular', sans-serif;
+      outline: none; }
+      .castle .wrapper.flex input:hover {
+        cursor: pointer;
+        border: 1px solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+        text-shadow: 1px 1px 2px #427388; }
+  .castle .castle-content {
+    width: 45%; }
+  .castle .photos {
+    width: 45%; }
+  .castle img[src^='img/mont'] {
+    float: right; }
+
+/*how-it-work*/
+.how-it-works {
+  background: #333333;
+  height: 340px; }
+  .how-it-works .plan {
+    background: url("img/svg/group.svg") center center no-repeat;
+    height: 150px;
+    padding-top: 4%; }
+  .how-it-works .plan-works {
+    font: 36px/26px 'aleoregular', sans-serif;
+    display: flex;
+    justify-content: space-around; }
+
+/*spain*/
+.spain {
+  position: relative;
+  background: url("img/house-bg.jpg") center center no-repeat;
+  height: 700px; }
+  .spain .spain-content {
+    position: absolute;
+    top: 32%;
+    width: 540px;
+    height: 370px;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    background-color: rgba(39, 39, 39, 0.9);
+    font: 16px/26px 'Josefin Sans', Arial, sans-serif; }
+    .spain .spain-content h1,
+    .spain .spain-content h2 {
+      font-size: 20px;
+      line-height: 26px; }
+    .spain .spain-content h3 {
+      text-transform: uppercase; }
+    .spain .spain-content input {
+      background: blue;
+      border: none;
+      height: 60px;
+      width: 225px;
+      margin: 2px;
+      text-transform: uppercase;
+      font: 16px/26px 'aleoregular', sans-serif;
+      outline: none; }
+      .spain .spain-content input:hover {
+        cursor: pointer;
+        border: 1px solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+        text-shadow: 1px 1px 2px #427388; }
+
+.spain-sea {
+  position: relative;
+  background: url("img/sunset-bg.jpg") center center no-repeat;
+  height: 700px; }
+  .spain-sea .spain-sea-content {
+    float: right;
+    position: absolute;
+    top: 32%;
+    left: 52%;
+    width: 540px;
+    height: 370px;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    background-color: rgba(39, 39, 39, 0.9);
+    font: 16px/26px 'Josefin Sans', Arial, sans-serif; }
+    .spain-sea .spain-sea-content h1,
+    .spain-sea .spain-sea-content h2 {
+      font-size: 20px;
+      line-height: 26px; }
+    .spain-sea .spain-sea-content h3 {
+      text-transform: uppercase; }
+    .spain-sea .spain-sea-content input {
+      background: blue;
+      border: none;
+      height: 60px;
+      width: 225px;
+      margin: 2px;
+      text-transform: uppercase;
+      font: 16px/26px 'aleoregular', sans-serif;
+      outline: none; }
+      .spain-sea .spain-sea-content input:hover {
+        cursor: pointer;
+        border: 1px solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+        text-shadow: 1px 1px 2px #427388; }
+
+.tourist {
+  display: flex;
+  background: url("img/man-bg.jpg") center center no-repeat;
+  height: 730px;
+  width: 100%;
+  box-sizing: border-box; }
+  .tourist h1 {
+    text-align: center;
+    font: 36px/26px 'aleoregular', sans-serif;
+    margin: 120px auto; }
+  .tourist .tourist-content {
+    display: flex;
+    justify-content: center; }
+    .tourist .tourist-content .text {
+      padding: 40px 60px 33px;
+      background: #333333;
+      height: 284px;
+      text-align: justify;
+      box-sizing: border-box; }
+      .tourist .tourist-content .text h3 {
+        font: 20px/26px 'Josefin Sans', Arial, sans-serif;
+        text-transform: uppercase; }
+      .tourist .tourist-content .text p {
+        font: 16px/26px 'Josefin Sans', Arial, sans-serif; }
+
+footer {
+  padding-top: 100px;
+  height: 270px;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  background: #232323; }
+  footer .footer-content {
+    width: 170px;
+    margin: 0 auto;
+    text-align: center; }
+    footer .footer-content h2 {
+      font: 700 26px 'Josefin Sans', Arial, sans-serif;
+      text-transform: uppercase;
+      margin: 0; }
+    footer .footer-content p {
+      color: #ffffff;
+      margin-bottom: 30px;
+      letter-spacing: 1px; }
+    footer .footer-content .social {
+      display: flex;
+      justify-content: space-between; }
+      footer .footer-content .social .fab {
+        color: #ffffff; }
+      footer .footer-content .social a:hover .fab {
+        color: #5474FD; }
+
+/*# sourceMappingURL=main.css.map */

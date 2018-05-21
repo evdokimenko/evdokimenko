@@ -1,0 +1,306 @@
+@import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+@font-face {
+  font-family: 'aleoregular';
+  src: url(font/Aleo-Regular-webfont.eot);
+  src: url(font/Aleo-Regular-webfont.eot?#iefix) format('embedded-opentype'),
+  url(font/Aleo-Regular-webfont.woff) format('woff'),
+  url(font/Aleo-Regular-webfont.ttf) format('truetype'),
+  url(font/Aleo-Regular-webfont.svg#aleoregular) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  color: $color;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  min-width: 720px;
+}
+
+.mountains {
+  height: 100vh;
+  width: 100%;
+  background: url("img/mountains.jpg") center center no-repeat;
+  background-size: cover;
+  .wrapper.one {
+    height: 100vh;
+    text-align: center;
+  }
+  h1 {
+    display: inline-block;
+    margin: 0;
+    font: 48px/26px "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    padding-top: 245px;
+  }
+  p {
+    font: 22px/26px "Josefin Sans", sans-serif;
+    letter-spacing: 6px;
+    margin: 18px 0;
+  }
+  form {
+    width: 650px;
+    height: 60px;
+    background: $color;
+    margin: 0 auto;
+    input[type='search']:focus{
+      color: #333333;
+      box-shadow: inset 0 0 16px -3px rgba(34,51,186,1);
+      font-size: 15px;
+  }
+  }
+  input[type="search"] {
+    border: none;
+    width: 493px;
+    height: 56px;
+    margin: 2px;
+    text-align: center;
+    outline: none;
+    font: 14px/26px "Josefin Sans", sans-serif;
+  }
+  input[type="submit"] {
+    background: blue url("img/svg/search.svg") 90% 50% no-repeat;
+    border: none;
+    height: 56px;
+    width: 145px;
+    margin: 2px;
+    text-transform: uppercase;
+    font: 14px/26px 'aleoregular' serif;
+    outline: none;
+    @include hover-button
+  }
+  .scroll-button {
+    position: relative;
+    top: 15%;
+    a {
+      font: 14px/26px "Josefin Sans", sans-serif;
+      span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 13px;
+        height: 8px;
+        background: url("img/svg/scroll.svg");
+        margin: 0 auto;
+      }
+    }
+  }
+  header {
+    background: #5474fd;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    .wrapper {
+      position: relative;
+      top: 40%;
+      bottom: 50%;
+    }
+    .logo {
+      display: inline-block;
+      font: 700 24px/26px "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      float: left;
+      & a {
+      }
+    }
+    ul.nav {
+      margin: 0;
+      float: right;
+    }
+    li {
+      display: inline-block;
+      margin-left: 60px;
+      a {
+        transition: 0.3s ease;
+        font: 14px/26px 'aleoregular', sans-serif;
+        text-transform: uppercase;
+        &:hover {
+          border-top: 4px solid $color;
+          border-bottom: 4px solid $color;
+          padding: 6px 0;
+        }
+      }
+    }
+  }
+}
+
+.castle {
+  background: url("img/castle-bg.jpg") center center no-repeat;
+  background-size: cover;
+  h2 {
+    font: 36px/26px 'aleoregular', serif;
+  }
+  p {
+    font: 16px/26px "Josefin Sans", sans-serif;
+  }
+  .wrapper.flex {
+    display: flex;
+    justify-content: space-between;
+    height: 690px;
+    align-items: center;
+    width: 100%;
+    input {
+      @include button;
+      @include hover-button
+    }
+  }
+  .castle-content {
+    width: 45%;
+  }
+  .photos {
+    width: 45%;
+  }
+  img[src^='img/mont'] {
+    float: right;
+  }
+}
+
+/*how-it-work*/
+.how-it-works {
+  background: #333333;
+  height: 340px;
+  .plan {
+    background: url("img/svg/group.svg") center center no-repeat;
+    height: 150px;
+    padding-top: 4%;
+  }
+  .plan-works {
+    font: 36px/26px 'aleoregular', sans-serif;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/*spain*/
+.spain {
+  position: relative;
+  background: url("img/house-bg.jpg") center center no-repeat;
+  height: 700px;
+  .spain-content {
+    position: absolute;
+    top: 32%;
+    width: 540px;
+    height: 370px;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    background-color: rgba(39, 39, 39, 0.9);
+    font: 16px/26px 'Josefin Sans', Arial, sans-serif;
+    h1,
+    h2 {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    h3 {
+      text-transform: uppercase;
+    }
+    input {
+      @include button;
+      @include hover-button
+    }
+  }
+}
+
+.spain-sea {
+  position: relative;
+  background: url("img/sunset-bg.jpg") center center no-repeat;
+  height: 700px;
+  .spain-sea-content {
+    float: right;
+    position: absolute;
+    top: 32%;
+    left: 52%;
+    width: 540px;
+    height: 370px;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    background-color: rgba(39, 39, 39, 0.9);
+    font: 16px/26px 'Josefin Sans', Arial, sans-serif;
+    h1,
+    h2 {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    h3 {
+      text-transform: uppercase;
+    }
+    input {
+      @include button;
+      @include hover-button
+    }
+  }
+}
+
+.tourist {
+  display: flex;
+  background: url("img/man-bg.jpg") center center no-repeat;
+  height: 730px;
+  width: 100%;
+  box-sizing: border-box;
+  h1 {
+    text-align: center;
+    font: 36px/26px 'aleoregular', sans-serif;
+    margin: 120px auto;
+  }
+  .tourist-content {
+    display: flex;
+    justify-content: center;
+    .text {
+      padding: 40px 60px 33px;
+      background: #333333;
+      height: 284px;
+      text-align: justify;
+      box-sizing: border-box;
+      h3 {
+        font: 20px/26px 'Josefin Sans', Arial, sans-serif;
+        text-transform: uppercase;
+      }
+      p {
+        font: 16px/26px 'Josefin Sans', Arial, sans-serif;
+      }
+    }
+  }
+}
+footer {
+  padding-top: 100px;
+  height: 270px;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  background: #232323;
+  .footer-content {
+    h2 {
+      font: 700 26px 'Josefin Sans', Arial, sans-serif;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    p{
+      color: $color;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+    }
+    width: 170px;
+    margin: 0 auto;
+    text-align: center;
+    .social {
+      display: flex;
+      justify-content: space-between;
+      .fab {
+        color: $color;
+      }
+      a:hover .fab {
+        color: #5474FD;
+      }
+    }
+  }
+}
