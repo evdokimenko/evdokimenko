@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+@import "slick", "slick-theme";
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial sans-serif;
+}
+.wrapper{
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url("../img/bg-section.png") center no-repeat ;
+  background-size: contain ;
+
+}
+.item {
+  position: relative;
+  .item-content {
+    position: absolute;
+    left: 0;
+    right: 80px;
+    top: 0;
+    bottom: 0;
+    background: rgba(27, 241, 173, .8);
+    color: #fff;
+    opacity: 0;
+    .item-text-wrap {
+      position: absolute;
+      left: 15px;
+      bottom: 15px;
+      h4 {
+        font-size: 28px;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+  .mySlider{
+    width: 80%;
+    position: relative;
+    left: 12%;
+
+  }
+  h2{
+    font-size: 18px;
+    line-height: 19.17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0;
+  }
+  h1{
+    font-size: 66px;
+    line-height: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .text-block{
+    padding-bottom: 43px;
+  }
+  .slick-slide {
+    img {
+      height: 300px;
+    }
+
+  }
+    .slick-prev:before {
+      content: url("../img/prev.png");
+    }
+
+    .slick-next:before {
+      content: url("../img/next.png");
+    }
+ .item:hover .item-content {
+  opacity: 1;
+}
+
+

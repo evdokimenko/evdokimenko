@@ -16,6 +16,7 @@
   text-decoration: none;
   list-style-type: none;
   color: $color;
+  align-items: center;
 }
 
 body {
@@ -101,23 +102,22 @@ body {
     height: 80px;
     position: absolute;
     width: 100%;
-    top: 90%;
+    bottom: 0;
+    left: 0;
     .wrapper {
-      position: relative;
-      top: 40%;
-      bottom: 50%;
+      display: flex;
+      justify-content: space-between;
+      line-height: 80px;
     }
     .logo {
       display: inline-block;
       font: 700 24px/26px "Josefin Sans", sans-serif;
       text-transform: uppercase;
-      float: left;
       & a {
       }
     }
     ul.nav {
       margin: 0;
-      float: right;
     }
     li {
       display: inline-block;
