@@ -4,6 +4,20 @@
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 960,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 540,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ],
             autoplay: true,
             autoplaySpeed: 4000,
             slide: "div",
