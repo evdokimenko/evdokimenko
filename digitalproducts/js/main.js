@@ -19,7 +19,7 @@
                 }
             ],
             autoplay: true,
-            autoplaySpeed: 4000,
+            autoplaySpeed: 3000,
             slide: "div",
             dots: false,
             prevArrow: ".arr-left-sm",
