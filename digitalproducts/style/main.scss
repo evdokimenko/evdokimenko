@@ -435,7 +435,7 @@ main {
   background-size: cover;
   .row {
     min-height: 30.625rem;
-    svg {
+    img {
       margin: 10px 0;
       &:hover {
         transform: scale(1.1);
@@ -530,3 +530,15 @@ main {
       }
     }
   }
+.arr-up {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  line-height: 50px;
+  cursor: pointer;
+  svg{
+    width: 50px;
+    fill: #c7b299;
+  }
+}

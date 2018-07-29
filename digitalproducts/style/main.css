@@ -304,9 +304,9 @@ main {
   background-size: cover; }
   .brands .row {
     min-height: 30.625rem; }
-    .brands .row svg {
+    .brands .row img {
       margin: 10px 0; }
-      .brands .row svg:hover {
+      .brands .row img:hover {
         transform: scale(1.1); }
 
 .description {
@@ -372,5 +372,16 @@ footer {
           text-decoration: none; }
           footer .row ul li a:hover {
             color: #c7b299; }
+
+.arr-up {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  line-height: 50px;
+  cursor: pointer; }
+  .arr-up svg {
+    width: 50px;
+    fill: #c7b299; }
 
 /*# sourceMappingURL=main.css.map */
