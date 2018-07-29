@@ -27,14 +27,5 @@
                 'swing'
             );
         });
-        $('nav a').on('click', function () {
-            var sectionTop = $('#' + $(this).data('id')).position().top;
-            console.log(sectionTop);
-            $('html, body').stop().animate(
-                {scrollTop: sectionTop},
-                500,
-                'swing'
-            );
-        });
     });
 })(jQuery);
